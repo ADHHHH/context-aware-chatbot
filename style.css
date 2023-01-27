@@ -13,7 +13,8 @@ html {
 .container {
     width: 100%;
     height: 100vh;
-    background-color: #262626;
+    
+    background-color: #19adce;
     display: grid;
     place-items: center;
 
@@ -22,7 +23,7 @@ html {
 .wrapper {
     width: 50rem;
     height: 70rem;
-    background: #ccc;
+    background: #ecf9f9;
     padding: 0.1rem;
     display: grid;
     place-items: center;
@@ -42,8 +43,8 @@ html {
 
 .header {
     width: 100%;
-    height: 10%;
-    background: #f1ae04;
+    height: 5%;
+    background: #1a3958;
     padding: 3rem;
     border-radius: 2.5rem 2.5rem 0 0;
 
@@ -58,6 +59,7 @@ html {
     text-align: center;
     display: inline-block;
     margin-left: 5rem;
+    color: #eee;
 
 
 }
@@ -65,7 +67,8 @@ html {
 .header-icon {
     text-align: right;
     display: inline-block;
-    margin-left: 2.7rem;
+    margin-left: 1rem;
+
 
 
 
@@ -75,4 +78,161 @@ html {
 .header-icon i {
     font-size: 1.9rem;
     letter-spacing: 1rem;
+    color: #eee;
 }
+
+.chatbot-container{
+    width: 33.5rem;
+        height: auto;
+        position: relative;
+        padding-left: 0.1rem;
+}
+
+
+div.chat-messages {
+    position: relative;
+    margin-top: 15px;
+    z-index: 10;
+}
+
+div.chat-messages div.chat {
+    position: relative;
+    width: 270px;
+    height: 55.5vh;
+    background: #eee;
+    left: 50%;
+    margin-left: -150px;
+    padding: 0;
+    border-radius: 5px;
+    font-size: 15px;
+
+    
+}
+
+div.chat div.chat-content>span {
+    margin-bottom: 12px;
+}
+
+div.chat div.chat-content span.jenny {
+    position: relative;
+    width: 70%;
+    height: auto;
+    display: inline-block;
+    background: #fff;
+    padding: 5px;
+    padding-bottom: 10px;
+    box-shadow: 2px 2px 20px -2px rgba(60, 51, 176, 0.2);
+    color: #575758;
+}
+
+img {
+    width: 4rem;
+    height: 4rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.jenny{
+display: inline-block;
+padding-bottom: 2rem;
+padding-top: 1rem;
+}
+
+div.chat div.chat-content span.jenny.first {
+    border-radius: 15px 15px 15px 2px;
+}
+
+div.chat div.chat-content span.jenny.last {
+    border-radius: 2px 15px 15px 15px;
+}
+
+div.chat div.chat-content span.jenny span.time {
+    position: absolute;
+    display: block;
+    right: 0;
+    margin-top: 5px;
+    margin-right: 10px;
+    font-size: 10px;
+    font-weight: 500;
+    color: rgba(60, 51, 176, 0.5);
+}
+
+div.chat div.chat-content span.you {
+    position: relative;
+    float: right;
+    width: 70%;
+    height: auto;
+    background: #273557;
+    display: inline-block;
+    padding: 10px;
+    padding-bottom: 10px;
+    color: #fff;
+
+    box-shadow: 2px 2px 20px rgba(60, 51, 176, 0.2),
+        inset -10px -10px 55px rgba(255, 255, 255, 0.1);
+}
+
+div.chat div.chat-content span.you span.time {
+    position: absolute;
+    display: block;
+    right: 0;
+    margin-top: 5px;
+    margin-right: 10px;
+    font-size: 10px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.5);
+}
+.space{
+    padding-top: 50px;
+}
+
+div.chat div.chat-content span.you.first {
+    border-radius: 15px 15px 2px 15px;
+}
+
+div.chat div.chat-content span.you.last {
+    border-radius: 15px 2px 15px 15px;
+}
+
+div.msg-box {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    border-radius: 10px;
+    border-top: 2px solid rgba(60, 51, 176, 0.1);
+    border-bottom: 0px solid rgba(60, 51, 176, 0.1);
+    overflow: hidden;
+}
+
+
+div.msg-box .ip-msg {
+    width: 85%;
+    font-size: 14px;
+    padding: 15px;
+    padding-right: 30%;
+    color: rgba(60, 51, 176, 0.9);
+    border: none;
+    background: rgba(0, 0, 0, 0.03);
+}
+
+div.msg-box .ip-msg::placeholder {
+    color: #1a3958;
+}
+
+div.msg-box span.btn-group {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 14px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+div.msg-box span.btn-group i {
+    color: #1a3958;
+    font-size: 18px;
+    padding: 0 7px;
+}
+
+
