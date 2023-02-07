@@ -38,37 +38,26 @@
          <div class="chatbot-container">
                     <div class="chat-messages">
                         <div class="chat">
-                            <div class="chat-content clearfix">
-                                <div class="jenny">
-                                <img src="./chatbot.png" alt="">
-                                <span class="jenny last">
-                                    Hi I'm Jenny, How can i help you today ?
-                                </span>
-                                </div>
-                                <span class="you first">
-                                    What is the 2 + 2
-                                </span>
-                                
+                            <div id="chat-content" class="chat-content clearfix">
                                 
                                 <div class="jenny">
                                     <img src="./chatbot.png" alt="">
-                                    <span class="jenny last">
-                                        The answer for is 2 + 2 = 4
+                                    <span class="jenny-msg">
+                                        Hi I'm Jenny, How can i help you today ?
                                     </span>
-                                </div>
+                                    </div>
                                 
                                 
                                
                             </div>
-                            <div class="space"></div>
+                            <br>
+                            <br>
                             <div class="msg-box">
-                                <input type="text" class="ip-msg" placeholder="type something.." />
-                                <span class="btn-group">
+                                <input type="text" id="input-text" class="ip-msg" placeholder="type something.." />
+                                <button id="submit-button" class="btn-group">
                                     <i class="fa fa-paper-plane"></i>
-                                </span>
-                                <span class="btn-group">
-                                    <i class="fa fa-paper-plane"></i>
-                                </span>
+                                </button>
+                                
                             </div>
                             
                         </div>
@@ -83,5 +72,6 @@
     </body>
     
     </html>
+    <script src="index.js"></script>
 </body>
 </html>
